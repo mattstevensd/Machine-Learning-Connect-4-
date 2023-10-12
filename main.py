@@ -36,6 +36,8 @@ fn.initializeoutputlayersquished(neuralnet,4,'b',7)
 
 duppy = 0
 
+#Example training session with initialized net below
+
 while duppy < 5:
 
   tree = {}
