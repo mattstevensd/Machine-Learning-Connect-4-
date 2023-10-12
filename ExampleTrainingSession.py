@@ -1,4 +1,4 @@
-import whatever as fn
+import NeuralNetFunctions as fn
 
 import numpy as np
 
