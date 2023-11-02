@@ -6,7 +6,7 @@ import math as mat
 
 import json
 
-class cheech:
+class PositionClass:
   def __init__(self, momma, pos):
     self.pos = pos
     self.babies = []
@@ -34,17 +34,17 @@ fn.initializeoutputlayer(neuralnet,4,'b',7)
 fn.initializeoutputlayerbiases(neuralnet,4,'b',7)
 fn.initializeoutputlayersquished(neuralnet,4,'b',7)
 
-duppy = 0
+counter = 0
 
 #Example training session with initialized net below
 
-while duppy < 5:
+while counter < 5:
 
   tree = {}
 
   og = np.zeros((2,6,7))
 
-  daddio = cheech('', og)
+  daddio = PositionClass('', og)
 
   daddio.turn = 'R'
 
@@ -54,7 +54,7 @@ while duppy < 5:
 
   fn.multtrainingdata(neuralnet,trainingdata,tree)
 
-  duppy = duppy + 1
+  counter = counter + 1
 
 with open("neuralnet.json", "w") as outfile:
     json.dump(neuralnet, outfile)
