@@ -3,7 +3,7 @@ import numpy as np
 
 import math as mat
 
-class cheech:
+class PositionClass:
   def __init__(self, momma, pos):
     self.pos = pos
     self.babies = []
@@ -39,7 +39,7 @@ def add_babies(tree, key):
       position1[1] = position0[0]
       newkey = key + str(i)
       tree[key].babies.append(newkey)
-      tree[newkey] = cheech(key, position1)
+      tree[newkey] = PositionClass(key, position1)
       tree[newkey].turn = nextturn
     elif position0[0][4][i] == 0 and position0[1][4][i] == 0:
       position0[0][4][i] = 1
@@ -47,7 +47,7 @@ def add_babies(tree, key):
       position1[1] = position0[0]
       newkey = key + str(i)
       tree[key].babies.append(newkey)
-      tree[newkey] = cheech(key, position1)
+      tree[newkey] = PositionClass(key, position1)
       tree[newkey].turn = nextturn
     elif position0[0][3][i] == 0 and position0[1][3][i] == 0:
       position0[0][3][i] = 1
@@ -55,7 +55,7 @@ def add_babies(tree, key):
       position1[1] = position0[0]
       newkey = key + str(i)
       tree[key].babies.append(newkey)
-      tree[newkey] = cheech(key, position1)
+      tree[newkey] = PositionClass(key, position1)
       tree[newkey].turn = nextturn
     elif position0[0][2][i] == 0 and position0[1][2][i] == 0:
       position0[0][2][i] = 1
@@ -63,7 +63,7 @@ def add_babies(tree, key):
       position1[1] = position0[0]
       newkey = key + str(i)
       tree[key].babies.append(newkey)
-      tree[newkey] = cheech(key, position1)
+      tree[newkey] = PositionClass(key, position1)
       tree[newkey].turn = nextturn
     elif position0[0][1][i] == 0 and position0[1][1][i] == 0:
       position0[0][1][i] = 1
@@ -71,7 +71,7 @@ def add_babies(tree, key):
       position1[1] = position0[0]
       newkey = key + str(i)
       tree[key].babies.append(newkey)
-      tree[newkey] = cheech(key, position1)
+      tree[newkey] = PositionClass(key, position1)
       tree[newkey].turn = nextturn
     elif position0[0][0][i] == 0 and position0[1][0][i] == 0:
       position0[0][0][i] = 1
@@ -79,7 +79,7 @@ def add_babies(tree, key):
       position1[1] = position0[0]
       newkey = key + str(i)
       tree[key].babies.append(newkey)
-      tree[newkey] = cheech(key, position1)
+      tree[newkey] = PositionClass(key, position1)
       tree[newkey].turn = nextturn
     else:
       pass
