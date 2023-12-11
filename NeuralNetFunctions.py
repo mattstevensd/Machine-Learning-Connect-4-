@@ -105,7 +105,7 @@ def initializeoutputlayersquished(neuralnet,layernumber,part,size):
   for y in range(size):
     neuralnet[str(layernumber)+part+'q'+str(y)] = [0,0]
 
-#neuralnetcalculations
+#Calculation funcitons (neural net calculates outpus layer values given some input)
 def relucalculation(neuralnet,layernumber):
 
   inputdim = neuralnet[str(layernumber)]
