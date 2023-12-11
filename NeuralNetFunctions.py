@@ -297,7 +297,7 @@ def neuralnetcalculation(neuralnet,inputarray):
     elif q == 'b':
       outputsquishcalculationb(neuralnet,finallayer,q)
 
-#backprop functions
+#backprop functions (given some desired output, this will back propoagte all partial derivates and store them in neural net)
 def dLd_firstconvlayer(neuralnet,layernumber):
   outputdepth = int(neuralnet[str(layernumber)][0])
   outputheight = int(neuralnet[str(layernumber)][1])
