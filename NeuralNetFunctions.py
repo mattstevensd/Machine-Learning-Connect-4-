@@ -4,7 +4,7 @@ import numpy as np
 import math as mat
 
 
-#initialization functions
+#Initialize neural network structure with random values or fill with desired weights and biases
 def initializeinputlayer(neuralnet,depth,height,width,nol,finalpartlist):
   neuralnet['info'] = [nol,finalpartlist]
   for i in range(depth):
