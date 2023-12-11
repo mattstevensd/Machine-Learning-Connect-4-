@@ -511,7 +511,7 @@ def neuralnetbackprop(neuralnet,inputarray):
     else:
       dLd_middleconvlayer(neuralnet,currentlayer)
 
-#training and backpropfunctions
+#training and backpropfunctions (Given a list of training data, these fucntions will conduct all backpropogations for all training data)
 def singletrainingdata(neuralnet,trainingposition,positionvalue,moveprobability):
 
   neuralnetcalculation(neuralnet,trainingposition)
