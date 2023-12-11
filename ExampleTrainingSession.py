@@ -1,5 +1,7 @@
 import NeuralNetFunctions as fn
 
+import TrainingFunctions as tf
+
 import numpy as np
 
 import math as mat
@@ -50,9 +52,9 @@ while counter < 5:
 
   tree['0'] = daddio
 
-  trainingdata = fn.training_series(tree,neuralnet,20)
+  trainingdata = tf.training_series(tree,neuralnet,20)
 
-  fn.multtrainingdata(neuralnet,trainingdata,tree)
+  tf.multtrainingdata(neuralnet,trainingdata,tree)
 
   counter = counter + 1
 
