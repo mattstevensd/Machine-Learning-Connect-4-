@@ -54,7 +54,7 @@ while counter < 5:
 
   trainingdata = tf.training_series(tree,neuralnet,20)
 
-  tf.multtrainingdata(neuralnet,trainingdata,tree)
+  fn.multtrainingdata(neuralnet,trainingdata,tree)
 
   counter = counter + 1
 
