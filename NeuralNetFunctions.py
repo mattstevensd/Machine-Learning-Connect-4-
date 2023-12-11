@@ -556,7 +556,7 @@ def multtrainingdata(neuralnet,trainingdatalist,tree):
     return
 
     
-#def initializeupdatelist(neuralnet):
+def initializeupdatelist(neuralnet):
      
 
     updatelist = []
@@ -631,7 +631,7 @@ def multtrainingdata(neuralnet,trainingdatalist,tree):
                         updatelist[finallayer - 2][blep-1][0][j][k][l].append(0)
     
     return updatelist
-#def populateupdatelist(neuralnet,updatelist):
+def populateupdatelist(neuralnet,updatelist):
 
     nol = neuralnet['info'][0]
     finalpartlist = neuralnet['info'][1]
