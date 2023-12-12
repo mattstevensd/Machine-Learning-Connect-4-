@@ -46,11 +46,11 @@ while counter < 5:
 
   og = np.zeros((2,6,7))
 
-  daddio = PositionClass('', og)
+  firstposition = PositionClass('', og)
 
-  daddio.turn = 'R'
+  firstposition.turn = 'R'
 
-  tree['0'] = daddio
+  tree['0'] = firstposition
 
   trainingdata = tf.training_series(tree,neuralnet,20)
 
